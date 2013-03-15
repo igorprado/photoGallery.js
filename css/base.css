@@ -1,0 +1,178 @@
+@charset 'UTF-8';
+#formContainer {
+  text-align: center;
+  padding: 20px 0 5px;
+  background: #eeeeee;
+}
+
+.alert {
+  width: 80%;
+  font-size: 12px;
+  margin-left:  auto;
+  margin-right:  auto;
+}
+
+#container {
+  padding-top: 20px;
+}
+
+#thumbsContainer {}
+
+.thumbnails {
+  height: 260px;
+}
+
+.thumbnails li {
+  display: none;
+}
+
+.thumbnails li a {
+  opacity: 0.4;
+}
+
+.thumbnails li a.active {
+  opacity: 1;
+}
+
+.thumbnails li.show {
+  display: inline-block;
+}
+
+.pages {
+  float: right;
+  clear: both;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.pages li {
+  display: inline-block;
+  margin: 0 5px;
+  opacity: 0.3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.pages li.active {
+  opacity: 0.6;
+}
+
+.pages a {
+  display: block;
+  text-indent: -9999px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #000;
+  border: 3px solid #FFF;
+}
+
+
+#featuredContainer h1 {
+  text-align: center;
+}
+
+.counter {
+  text-align: center;
+}
+
+.featuredImgContainer {
+  text-align: center;
+}
+
+#holder {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+
+#holder img {
+  min-width: 400px;
+  min-height: 400px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#controller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#controller div {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#controller a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 152px;
+  opacity: 0.6;
+  color: #FFF;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#controller a:before {
+  content: ' ';
+  height: 100%;opacity: 0.2;
+}
+
+#controller a:before,
+#controller span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#controller a:hover {
+  text-decoration: none;
+  color: #FFF;
+  opacity: 0.9;
+}
+
+
+#controller a.disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+#controller span {
+  width: 26px;
+  height: 45px;
+  background: url(../imgs/nav-sprite.png) no-repeat;
+}
+
+#nextPhoto {
+  text-align: right;
+}
+
+#nextPhoto span {
+  background-position: top right;
+  margin-right: 20px;
+}
+
+#previousPhoto {
+  text-align: left;
+}
+
+#previousPhoto span {
+  background-position: top left;
+  margin-left: 20px;
+}
+
+.featuredContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Flicker API</title>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="css/base.css" rel="stylesheet"></head>
+<body>
+  <div class="container">
+    <div id="formContainer" class-="row-fluid">
+      <form action="#" id="form" class="form-inline">
+        <label for="gallery_id">
+          Informe o ID do álbum:
+          <input type="text" placeholder="" id="gallery_id" class="input-medium"></label>
+        <button type="submit" class="btn btn-primary" id="teste"> <i class="icon-search icon-white"></i>
+          Mostrar
+        </button>
+      </form>
+      <div class="alert alert-info">
+        Exemplos de álbuns: 72157631635414212 (Aurora Boreau - 120 fotos), 72157631278180720 (Paisagens - 22 fotos), 72157629495106802 (Sexy - 24 fotos)
+      </div>
+    </div>
+    <div id="container" class="row">
+      <div id="thumbsContainer" class="span4"></div>
+      <div id="featuredContainer" class="span8"></div>
+    </div>
+  </div>
+  <script src="js/helpers.js"></script>
+  <script src="js/GalleryModel.js"></script>
+  <script src="js/GalleryView.js"></script>
+  <script src="js/GalleryController.js"></script>
+  <script src="js/flickr.js"></script>
+</body>
+</html>
