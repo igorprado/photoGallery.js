@@ -17,7 +17,7 @@ function GalleryModel(id) {
       var httpRequest;
       var result = [];
       var _this = this;
-      var url = "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=" + this._api_key + "&photoset_id=" + this._gallery_id + "&format=json&nojsoncallback=1";
+      var url = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=" + this._api_key + "&photoset_id=" + this._gallery_id + "&format=json&nojsoncallback=1";
       if (window.XMLHttpRequest) { // Mozilla, Safari, ...
         httpRequest = new XMLHttpRequest();
       } else if (window.ActiveXObject) { // IE
